@@ -23,6 +23,9 @@
 <div id="app"></div>
 <!-- built files will be auto injected -->
 
+<!-- Insert this line above script imports  -->
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
 
 <!-- Javascripts -->
 <script src="static/plugins/jquery/jquery-2.2.0.min.js"></script>
@@ -42,5 +45,8 @@
 <script src="static/plugins/peity/jquery.peity.min.js"></script>
 <script src="static/js/alpha.js"></script>
 <!--<script src="static/js/pages/dashboard.js"></script>-->
+
+<!-- Insert this line after script imports -->
+<script>if (window.module) module = window.module;</script>
 </body>
 </html>
